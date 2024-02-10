@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <img src="img/2752a91fb84f115ddbc867c050aa058b (1).png" alt="" />
+      <h1>LONG TIME NO SEE 🫶🫶🫶😁😁😁</h1>
+      <h4>Tết năm nay bạn mừng tuổi mình chứ 🤔🤔🤔🤔</h4>
+
+      <div class="buttons">
+        <button onclick="Show()" class="yes" style="background-color: rgb(212, 200, 60)">
+          Đồng ý
+        </button>
+        <button
+          class="my-button"
+          onclick="RandomAddress()"
+          style="background-color: rgb(229, 81, 81)"
+        >
+          Đéo
+        </button>
+      </div>
+    </div>
+    <div class="thanks">
+      <div class="content">
+        <h1>Yêu Bạn Nhất Trên Đời</h1>
+        <div class="my-img" style="display: flex;">
+          <img class="my-qr" src="img/Screenshot 2024-02-08 165557.png" />
+          <img class="nice"
+            src="img/422863991_3685538358390776_8798653059829299825_n.jpg"
+            alt=""
+          />
+        </div>
+      </div>
+    </div>
+    <script>
+      let buttonSize = 100; // Kích thước ban đầu của nút "Đồng ý"
+function Show(){
+    let thanks = document.querySelector(".thanks")
+    thanks.style.display = 'block'
+    thanks.style.opacity = 1
+    thanks.style.transition = "transform 1s ease, opacity 1s ease "
+}
+      function RandomAddress() {
+        const button = document.querySelector(".my-button");
+        const randomX = Math.floor(Math.random() * window.innerWidth);
+        const randomY = Math.floor(Math.random() * window.innerHeight);
+        button.style.left = randomX + "px";
+        button.style.top = randomY + "px";
+        const yesButton = document.querySelector(".yes");
+        buttonSize += 50; // Tăng kích thước sau mỗi lần nhấn
+        yesButton.style.width = buttonSize + "px";
+        yesButton.style.height = buttonSize + "px";
+      }
+    </script>
+  </body>
+</html>

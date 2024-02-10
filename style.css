@@ -1,0 +1,60 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    background-image: url('https://moavietnam.com/wp-content/uploads/2017/01/background-tet-2019-k%E1%BB%B7-h%E1%BB%A3i.jpg');
+    background-size:cover;
+    height: auto ;
+}
+.container{
+    text-align: center;
+    margin: 50px;
+}
+.container img{
+    width: 300px;
+    height: 150px;
+    border-radius: 20% 80%;
+}
+.container h1,
+.container h4 {
+    color: aliceblue;
+}
+.container button{
+    width: 150px;
+    height: 40px;
+    margin: 0 40px ;
+    border: none;
+    color: aliceblue;
+    font-size: small;
+    cursor: pointer;
+}
+.my-button{
+    position: absolute;
+    left: 42.5%;
+    top: 55%;
+    cursor: pointer;
+}
+.thanks{
+    position: absolute;
+    top: 180px;
+    right: 33%;
+    display: none;
+    /* transform: translateY(100%); */
+    opacity:0;
+    transition: transform 1s ease, opacity 1s ease;
+}
+.content {
+    width: 500px;
+    height: 300px;
+    background: white;
+    /* transform: translateY(0);
+            opacity: 1; */
+}
+.my-qr{
+  width: 100px;
+  margin: 0 20px ;
+}
+.my-img .nice{
+    width: 200px;
+    margin-left: 100px;
+}
